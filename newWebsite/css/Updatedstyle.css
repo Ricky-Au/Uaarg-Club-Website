@@ -629,13 +629,60 @@ header .overlay {
   }
 }
 
-/* Background image used in the about us page */
-.ourTeamsBanner {
-  background: url('../images/OurTeams.jpg');
-  /* filter: blur(10px);
-  -webkit-filter: blur(10px); */
+/* Formats the text over the home page images */
+.homeText {
+  position: absolute;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* The following background images will be used on the home page */
+.homePageImg1 {
+  background: url('../images/homePlane.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 90vh;
+  opacity: .3;
+  background-attachment: fixed;
+}
+
+.homePageImg2 {
+  background: url('../images/homeComp.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  opacity: .3;
+  background-attachment: fixed;
+}
+
+.homePageImg3 {
+  background: url('../images/homeTeam.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  opacity: .3;
+  background-attachment: fixed;
+}
+
+.homePageImg4 {
+  background: url('../images/homeBlog.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  opacity: .3;
+  background-attachment: fixed;
+}
+
+.homePageImg5 {
+  background: url('../images/homeSponsors.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  opacity: .3;
+  background-attachment: fixed;
 }
