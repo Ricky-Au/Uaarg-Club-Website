@@ -327,6 +327,47 @@ body {
   right: 0;
 }
 
+.buttonEmail{
+  display: inline-block;
+  border-radius: 100px;
+  background-color: rgba(0,0,0, 0.4);
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* The following 4 classes will allow for the animation to occur when hovering over */
+.buttonEmail span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonEmail span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonEmail:hover span {
+  padding-right: 25px;
+}
+
+.buttonEmail:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* Used in the contact page to format the area where the user enters in information */
 .contactForm {
   height: 200vh;
@@ -364,6 +405,7 @@ body {
   position: absolute;
   padding: 30px;
   text-align: center;
+  text-transform: uppercase;
   align-self: center;
   max-width: 800px;
 }
@@ -588,60 +630,13 @@ header .overlay {
   }
 }
 
-/* Formats the text over the home page images */
-.homeText {
-  position: absolute;
-  padding: 20px;
-  max-width: 1000px;
-}
-
-/* The following background images will be used on the home page */
-.homePageImg1 {
-  background: url('../images/homePlane.jpg');
+/* Background image used in the about us page */
+.ourTeamsBanner {
+  background: url('../images/OurTeams.jpg');
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg2 {
-  background: url('../images/homeComp.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg3 {
-  background: url('../images/homeTeam.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg4 {
-  background: url('../images/homeBlog.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg5 {
-  background: url('../images/homeSponsors.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
+  height: 60vh;
 }
