@@ -364,7 +364,6 @@ body {
   position: absolute;
   padding: 30px;
   text-align: center;
-  /* text-transform: uppercase; */
   align-self: center;
   max-width: 800px;
 }
@@ -587,15 +586,6 @@ header .overlay {
   header video {
     display: none;
   }
-}
-
-/* Background image used in the about us page */
-.ourTeamsBanner {
-  background: url('../images/OurTeams.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
 }
 
 /* Formats the text over the home page images */
