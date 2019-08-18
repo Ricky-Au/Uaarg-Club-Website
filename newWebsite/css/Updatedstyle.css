@@ -364,7 +364,7 @@ body {
   position: absolute;
   padding: 30px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   align-self: center;
   max-width: 800px;
 }
@@ -597,7 +597,6 @@ header .overlay {
   background-size: cover;
   height: 60vh;
 }
-
 
 /* Formats the text over the home page images */
 .homeText {
