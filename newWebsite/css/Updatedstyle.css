@@ -1,0 +1,601 @@
+
+/* This is the style set for the entire body */
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #373737;
+}
+
+/* The airplane logo displayed on the top of the page */
+.Logo {
+  width: 110px;
+}
+
+@media screen and (max-width: 800px) {
+  .shiftIfSmall {
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+}
+
+/* Hides the "UAARG" title when the screen size is too small */
+@media screen and (max-width: 800px) {
+  .hideIfSmall {
+    display: none;
+  }
+}
+
+/* The join button displayed on the top right of the page */
+.joinButton {
+  position: absolute;
+  width: 160px;
+  top: 12px;
+  right: 50px;
+}
+
+
+/* This is the yellow bar which contains the logo, "UAARG", and join button */
+.myheader {
+    background: #ffc107;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Style for the navigation bar */
+.mynavbar {
+  background: #333333;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 2px solid #ffc107;
+  opacity: .95;
+}
+
+/* When the NavBar is collapsed- this will center all the links */
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* The following 3 are spacing out the navbar words based on screen sizes*/
+@media (min-width: 900px){
+    .navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+}
+
+@media (min-width: 1100px){
+    .navbar li {
+        margin-left : 2em;
+        margin-right : 2em;
+    }
+}
+
+@media (min-width: 1300px){
+    .navbar li {
+        margin-left : 3em;
+        margin-right : 3em;
+    }
+}
+
+/* When the button is hovered over (on the navBar), it will invert the colors */
+.highlight:hover {
+  background: #ffc107;
+}
+
+/* Makes sure the navbar is stuck to the top of the screen when we scroll down */
+.sticky-top {
+  top: 0em;
+}
+
+.column {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear:both;
+  display:table;
+}
+
+/* "Justifies" all the paragraphs */
+.fixSpacing {
+  text-align: justify
+}
+
+/* The background image used for the competition page */
+.comp1Banner {
+  background: url('../images/comp1.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Background image used for the donor page */
+.handshakeBanner {
+  background: url('../images/handshake.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Background image used for the members page */
+.teamBanner {
+  background: url('../images/team.jpg');
+  filter: blur(9px);
+  -webkit-filter: blur(9px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Background image used for the JoinUs page */
+.squadBanner {
+  background: url('../images/squad.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Background image used for the Shipping page */
+.shippingBanner {
+  background: url('../images/shipping.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Background image used for the map page */
+.mapBanner {
+  background: url('../images/map.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* This styles the text whenever we want to use it over an image */
+.BannerText {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.6);
+  color: #ffc107;
+  font-size: 50px;
+  border: 4px solid #ffc107;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: center;
+  max-width: 700px;
+}
+
+/* This is the image used for the simple question asked at the bottom of the member pages */
+.simpleQuestionMemberPage {
+  background: url('../images/simpleQ.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  opacity: .7;
+}
+
+/* This is the image used for the simple question asked at the bottom of the competition pages */
+.simpleQuestionCompPage {
+  background: url('../images/planetoss.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  opacity: .4;
+}
+
+/* This is the image used for the simple question asked at the bottom of the donor page */
+.simpleQuestionDonorPage {
+  background: url('../images/donorplane.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  opacity: .45;
+}
+
+/* This is the image used for the simple question asked at the bottom of the about page */
+.simpleQuestionAboutPage {
+  background: url('../images/aboutSimpleQuestion.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  opacity: .45;
+}
+
+/* Formats the text over the simpeQuestion image */
+.simpleQText {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  align-self: center;
+  max-width: 800px;
+}
+
+/* Font for the footer */
+.footerFont {
+  margin-bottom:0;
+  background: #595454;
+  color: black;
+}
+
+/* Style used for the profile cards in the member page */
+.myCard {
+  background: #ffc107;
+  border: solid #ffc107;
+  text-align: center;
+}
+
+.card .front {
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: .5s;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: .5s;
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.card .back .details {
+  position: absolute;
+
+}
+
+/* Background image used in the about us page */
+.aboutBanner {
+  background: url('../images/AboutPage.jpg');
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* Button used in multiple places (simple question and contact page) */
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* The following 4 classes will allow for the animation to occur when hovering over */
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Used in the contact page to format the area where the user enters in information */
+.contactForm {
+  height: 200vh;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+/* Background image used for the contact page */
+.contactBack {
+  background: url('../images/contactbackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  opacity: .8;
+}
+
+/* Background image used for the join us contact page */
+.joinContact {
+  background: url('../images/JoinContact.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  opacity: .8;
+}
+
+/* This is the slideshow used on the about page- formats the text */
+.CarouselText {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.8);
+  color: #ffc107;
+  font-size: 80px;
+  border: 4px solid #ffc107;
+  position: absolute;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: center;
+  max-width: 800px;
+}
+
+.CarouselDescription {
+  font-size: 10px;
+  position: absolute;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 18%;
+  top: 50%;
+}
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #373737;
+  color: #ffc107;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #ffc107;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background-color: #ffc107;
+  color: #373737;
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(360deg);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* The following 3 classes are used to animate the buttons for the footer. */
+.s-m a {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  background: #ffc107;
+  color: #373737;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.regular-s-m a:hover {
+  background: #373737;
+  color: #ffc107;
+  transition: 0.4s;
+}
+
+.regular-s-m a:hover > i {
+  transform: scale(1.3) rotate(380deg);
+  transition: .2s;
+}
+
+/* The following 2 classes are used to animate the facebook button for the footer */
+#animatedFacebook:hover {
+  background: #373737;
+  color: #3366ff;
+  transition: 0.4s;
+}
+
+#animatedFacebook:hover > i {
+  transform: scale(1.3) rotate(380deg);
+  transition: .2s;
+}
+
+/* The following 2 classes are used to animate the facebook button for the footer */
+#animatedYoutube:hover {
+  background: #373737;
+  color: #cc0000;
+  transition: 0.4s;
+}
+
+#animatedYoutube:hover > i {
+  transform: scale(1.3) rotate(380deg);
+  transition: .2s;
+}
+
+/* This is used to make the refresh button rotate on the "Contact page" */
+#refreshButton:hover {
+  background: #373737;
+  color: #ffc107;
+  transition: .4s;
+}
+
+#refreshButton:hover > i {
+  transform: rotate(360deg);
+  transition: .3s;
+}
+
+.myContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.toggleButton a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #373737;
+  color: #ffc107;
+  margin: 0 6px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  text-decoration: none;
+}
+
+.toggleButton a:hover {
+  background: #373737;
+  color: #ffc107;
+  transition: 0.4s;
+}
+
+.toggleButton a:hover > i {
+  transform: scale(1.6) rotate(380deg);
+  transition: .2s;
+}
+
+/* This header information is used for the video on the home page.
+  It is taken from https://tinyurl.com/y54lku36 */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/* Background image used in the about us page */
+.ourTeamsBanner {
+  background: url('../images/OurTeams.jpg');
+  /* filter: blur(10px);
+  -webkit-filter: blur(10px); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
