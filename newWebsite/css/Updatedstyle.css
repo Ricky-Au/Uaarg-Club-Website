@@ -686,3 +686,17 @@ header .overlay {
   opacity: .3;
   background-attachment: fixed;
 }
+
+.grid3 > div{
+  background: #ffc107;
+  text-align: center;
+  float: none;
+  display: inline-block;
+  background-clip: content-box
+}
+
+.fixSizeHome {
+  color: #373737;
+  font-size: 80px;
+  text-decoration: none;
+}
