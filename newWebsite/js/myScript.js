@@ -79,7 +79,39 @@ ScrollReveal().reveal('.leftDelay', {
 ScrollReveal().reveal('.rightDelay', {
   duration: 4000,
   origin: 'right',
+  distance: '130px'
+});
+
+// Animation- Image moves to position from bottom of screen with reset (3s)
+ScrollReveal().reveal('.bottomDelayReset', {
+  duration: 3000,
+  origin: 'bottom',
   distance: '130px',
+  reset: true
+});
+
+// Animation- Image moves to position from right of screen (4s)
+ScrollReveal().reveal('.leftDelayReset', {
+  duration: 2000,
+  origin: 'left',
+  distance: '130px',
+  reset: true
+});
+
+// Animation- Image moves to position from right of screen with reset (4s)
+ScrollReveal().reveal('.rightDelayReset', {
+  duration: 4000,
+  origin: 'right',
+  distance: '130px',
+  reset: true
+});
+
+// Animation- Image moves to position from right of screen with reset (4s)
+ScrollReveal().reveal('.largeLeftReset', {
+  duration: 1000,
+  origin: 'left',
+  distance: '5000px',
+  reset: true
 });
 
 const backToTopButton = document.querySelector("#back-to-top-btn");

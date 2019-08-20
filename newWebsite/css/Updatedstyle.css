@@ -330,9 +330,9 @@ body {
 .buttonEmail{
   display: inline-block;
   border-radius: 100px;
-  background-color: rgba(0,0,0, 0.4);
+  background-color: #373737;
   border: none;
-  color: black;
+  color: #ffc107;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -662,27 +662,7 @@ header .overlay {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg4 {
-  background: url('../images/homeBlog.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  opacity: .3;
-  background-attachment: fixed;
-}
-
-.homePageImg5 {
-  background: url('../images/homeSponsors.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
+  height: 120vh;
   opacity: .3;
   background-attachment: fixed;
 }
@@ -699,4 +679,211 @@ header .overlay {
   color: #373737;
   font-size: 80px;
   text-decoration: none;
+}
+
+.slantedDivA {
+  position: relative;
+  height: 500px;
+  background: rgba(255, 193, 7, 0.5);
+  color: #fff;
+}
+
+.slantedDivA:after {
+  position: absolute;
+  height: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+
+.slantedDivB {
+  position: relative;
+  height: 700px;
+  background: rgba(255, 193, 7, 0.5);
+  color: #fff;
+}
+
+.slantedDivB:after {
+  position: absolute;
+  height: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+}
+
+@media screen and (max-width: 845px) {
+  .homePageImg1 {
+    height: 110vh;
+  }
+  .slantedDivA {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .slantedDivA {
+    height: 600px;
+  }
+  @media screen and (max-width: 752px) {
+    .slantedDivA {
+      height: 640px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .slantedDivA {
+      height: 730px;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .slantedDivA {
+      height: 770px;
+    }
+  }
+  @media screen and (max-width: 465px) {
+    .slantedDivA {
+      height: 800px;
+    }
+  }
+  @media screen and (max-width: 457px) {
+    .slantedDivA {
+      height: 870px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .slantedDivA {
+      height: 910px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .slantedDivA {
+      height: 950px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .slantedDivA {
+      height: 1000px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .slantedDivA {
+      height: 1050px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .slantedDivA {
+      height: 1110px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .slantedDivA {
+      height: 1080px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homePageImg1 {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .homePageImg1 {
+    height: 220vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .homePageImg1 {
+    height: 270vh;
+  }
+  .slantedDivB {
+    height: 1080px;
+  }
+  .homePageImg2 {
+    height: 200vh;
+  }
+  .homePageImg3 {
+    height: 200vh;
+  }
+}
+
+/* Vertical Sliding was taken from https://codepen.io/amritleone/pen/qERPmW */
+.slidingVertical{
+	display: inline;
+	text-indent: 8px;
+}
+
+.slidingVertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	-ms-animation: topToBottom 12.5s linear infinite 0s;
+	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+	color: black;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
 }
