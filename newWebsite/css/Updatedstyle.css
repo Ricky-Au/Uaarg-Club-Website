@@ -723,100 +723,100 @@ header .overlay {
   transform: skewY(-4deg);
 }
 
-@media screen and (max-width: 845px) {
-  .homePageImg1 {
-    height: 110vh;
-  }
-  .slantedDivA {
-    height: 550px;
-  }
+.homeTitle {
+  font-size: 80px;
 }
 
-@media screen and (max-width: 755px) {
-  .slantedDivA {
-    height: 600px;
-  }
-  @media screen and (max-width: 752px) {
-    .slantedDivA {
-      height: 640px;
-    }
-  }
-  @media screen and (max-width: 640px) {
-    .slantedDivA {
-      height: 730px;
-    }
-  }
-  @media screen and (max-width: 540px) {
-    .slantedDivA {
-      height: 770px;
-    }
-  }
-  @media screen and (max-width: 465px) {
-    .slantedDivA {
-      height: 800px;
-    }
-  }
-  @media screen and (max-width: 457px) {
-    .slantedDivA {
-      height: 870px;
-    }
-  }
-  @media screen and (max-width: 410px) {
-    .slantedDivA {
-      height: 910px;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .slantedDivA {
-      height: 950px;
-    }
-  }
-  @media screen and (max-width: 390px) {
-    .slantedDivA {
-      height: 1000px;
-    }
-  }
-  @media screen and (max-width: 370px) {
-    .slantedDivA {
-      height: 1050px;
-    }
-  }
-  @media screen and (max-width: 360px) {
-    .slantedDivA {
-      height: 1110px;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .slantedDivA {
-      height: 1080px;
-    }
-  }
+.rotatingText {
+  color: black;
+  font-size: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  .homePageImg1 {
-    height: 200vh;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .homePageImg1 {
-    height: 220vh;
-  }
-}
-
-@media screen and (max-width: 320px) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 320px) {
   .homePageImg1 {
     height: 270vh;
-  }
-  .slantedDivB {
-    height: 1080px;
   }
   .homePageImg2 {
     height: 200vh;
   }
   .homePageImg3 {
     height: 200vh;
+  }
+  .slantedDivA {
+    height: 1000px;
+  }
+  .slantedDivB {
+    height: 1100px;
+  }
+  .homeTitle {
+    font-size: 50px;
+  }
+  .rotatingText {
+    font-size: 45px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+  .homePageImg1 {
+    height: 350vh;
+  }
+  .homePageImg2 {
+    height: 200vh;
+  }
+  .homePageImg3 {
+    height: 250vh;
+  }
+  .slantedDivA {
+    height: 650px;
+  }
+  .slantedDivB {
+    height: 900px;
+  }
+  .homeTitle {
+    font-size: 60px;
+  }
+  .rotatingText {
+    font-size: 60px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .homePageImg1 {
+    height: 80vh;
+  }
+  .homePageImg2 {
+    height: 80vh;
+  }
+  .homePageImg3 {
+    height: 110vh;
+  }
+  .slantedDivA {
+    height: 500px;
+  }
+  .slantedDivB {
+    height: 660px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .homePageImg1 {
+    height: 60vh;
+  }
+  .homePageImg2 {
+    height: 80vh;
+  }
+  .homePageImg3 {
+    height: 90vh;
+  }
+  .slantedDivA {
+    height: 570px;
+  }
+  .slantedDivB {
+    height: 690px;
   }
 }
 
