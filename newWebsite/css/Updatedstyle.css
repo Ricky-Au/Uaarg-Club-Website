@@ -98,6 +98,7 @@ body {
   top: 0em;
 }
 
+/* This is used in the donor page to scale the images properly */
 .column {
   width: 50%;
 }
@@ -255,27 +256,6 @@ body {
   background: #ffc107;
   border: solid #ffc107;
   text-align: center;
-}
-
-.card .front {
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: .5s;
-}
-
-.card .back {
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: .5s;
-}
-
-.card:hover .back {
-  transform: rotateX(0deg);
-}
-
-.card .back .details {
-  position: absolute;
-
 }
 
 /* Background image used in the about us page */
@@ -685,6 +665,7 @@ header .overlay {
   text-decoration: none;
 }
 
+/* This is the slanted yellow bar on the home page */
 .slantedDivA {
   position: relative;
   height: 500px;
@@ -706,6 +687,7 @@ header .overlay {
   transform: skewY(4deg);
 }
 
+/* Slanted yellow bar on home page but orientated a different direction */
 .slantedDivB {
   position: relative;
   height: 700px;
@@ -727,16 +709,25 @@ header .overlay {
   transform: skewY(-4deg);
 }
 
+/* Sets the font size for certain headers on the home page*/
 .homeTitle {
   font-size: 80px;
 }
 
+/* This sets the style for the rotating text part */
 .rotatingText {
   color: black;
   font-size: 50px;
 }
 
-/* Smartphones (landscape) ----------- */
+/* This class is needed for the contact pages due to the overflow when changing to smaller screen sizes */
+.contactFont {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 60px
+}
+
+/* Smartphones (protrait) ----------- */
 @media only screen and (min-width : 319px) and (max-width: 400px){
   .homePageImg1 {
     height: 260vh;
@@ -762,9 +753,21 @@ header .overlay {
   .simpleQuestionDonorPage {
     height: 120vh;
   }
+  .contactFont {
+    font-size: 30px;
+  }
+  .contactBack {
+    height: 240vh;
+  }
+  .buttonEmail {
+    width: 100px;
+  }
+  .joinContact {
+    height: 260vh;
+  }
 }
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones (landscape) ----------- */
 @media only screen and (max-width : 490px) and (min-width: 401px) {
   .homePageImg1 {
     height: 350vh;
@@ -789,6 +792,18 @@ header .overlay {
   }
   .simpleQuestionDonorPage {
     height: 110vh;
+  }
+  .contactFont {
+    font-size: 50px;
+  }
+  .contactBack {
+    height: 280vh;
+  }
+  .buttonEmail {
+    width: 190px;
+  }
+  .joinContact {
+    height: 280vh;
   }
 }
 
