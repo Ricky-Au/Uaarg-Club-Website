@@ -35,6 +35,10 @@ body {
   right: 50px;
 }
 
+/* This is the second join button found on the footer */
+.footerJoinButton {
+  width: 160px;
+}
 
 /* This is the yellow bar which contains the logo, "UAARG", and join button */
 .myheader {
